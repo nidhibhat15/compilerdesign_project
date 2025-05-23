@@ -1,42 +1,64 @@
-# compilerdesign_project
-Simple Recursive Descent Parser and Evaluator in C
+# 🎯 Simple Recursive Descent Parser and Evaluator in C
 
-This repository contains two versions of a simple recursive descent parser and evaluator for a tiny language supporting:
+Welcome to this **simple recursive descent parser** and evaluator written in C!  
+It parses and evaluates a tiny language supporting:
 
-Variable assignment (:=)
-Arithmetic expressions with +, *, and parentheses
-write statement to print evaluated results
-Files
+- Variable assignment (`:=`)
+- Arithmetic expressions with `+` and `*`
+- Parentheses for grouping
+- `write` statement to output results
 
-slr(1).c — Original parser implementation (filename includes parentheses; may require escaping or renaming on some systems)
-parser.c — Cleaned-up and improved version with expression evaluation and variable storage
-Features
+---
 
-Lexical analysis with tokenization and keyword detection
-Recursive descent parsing for statements and expressions
-Symbol table to manage variable values
-Expression evaluation during parsing
-Basic error detection and reporting
-Usage
+## 🚀 Features
 
-Rename or escape files with parentheses in their names before compiling, e.g.:
-mv "slr(1).c" parser.c
-Compile:
+- 🔍 **Lexer & Parser:** Tokenizes input and parses statements & expressions recursively  
+- 🗃️ **Symbol Table:** Stores and retrieves variable values  
+- 🧮 **Expression Evaluation:** Computes values during parsing  
+- ⚠️ **Error Handling:** Provides clear error messages on syntax errors  
+
+---
+
+## 💻 How to Use
+
+1. **Rename files** with parentheses in their names to avoid shell issues:  
+
+   ```bash
+   mv "slr(1).c" parser.c
+
+
+Compile the code using GCC:
 gcc parser.c -o parser
-Run:
+Run the parser:
 ./parser
-Modify the input string inside main() to test different programs.
-Example
+Modify the program being parsed by editing the input string inside the main() function.
 
-Input program (in input string):
+📝 Example Program
+
+Here’s a sample program stored in the input string:
 
 x := 2 + 3 * 4; write x;
-Output:
+Expected output:
 
 14
 Parsing completed successfully.
-Notes
+⚠️ Notes
 
-Designed as an educational example of parsing and interpretation in C.
-Parentheses in filenames require shell escaping or renaming to avoid issues.
-Feel free to extend with new language features!
+Filenames containing parentheses ( or ) may cause issues in some shells.
+Rename or escape such files before compiling or running.
+📦 Included Files
+
+Filename	Description
+slr(1).c	Original parser source code (with parentheses in filename)
+parser.c	Cleaned-up and improved parser code
+🙌 Contributions & Extensions
+
+Feel free to fork this project and add:
+
+Support for more operators (-, /, etc.)
+Control flow constructs (if, while)
+Functions and procedures
+Enhanced error reporting
+📫 Contact
+
+Questions or suggestions? Open an issue or reach out!
