@@ -42,10 +42,12 @@ Expected output:
 
 14
 Parsing completed successfully.
-⚠️ Notes
 
+
+⚠️ Notes
 Filenames containing parentheses ( or ) may cause issues in some shells.
 Rename or escape such files before compiling or running.
+
 📦 Included Files
 
 Filename	Description
@@ -54,11 +56,10 @@ parser.c	Cleaned-up and improved parser code
 🙌 Contributions & Extensions
 
 Feel free to fork this project and add:
-
 Support for more operators (-, /, etc.)
 Control flow constructs (if, while)
 Functions and procedures
 Enhanced error reporting
-📫 Contact
 
+📫 Contact my linkedin to connect!
 Questions or suggestions? Open an issue or reach out!
